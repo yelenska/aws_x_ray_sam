@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "aws-x-ray-sam"
+version = "0.1.0"
+description = ""
+authors = ["Viktoriia Yelenska <viktoriia.yelenska@gmail.com>"]
+readme = "README.md"
+packages = [{include = "aws_x_ray_sam"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+aws-lambda-powertools = {extras = ["tracer"], version = "^2.37.0"}
+requests = "^2.31.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
